@@ -8,6 +8,8 @@
 
 import UIKit
 
+var stroke = 5
+
 public final class PhotoEditorViewController: UIViewController {
     
     /** holding the 2 imageViews original image and drawing & stickers */
@@ -105,6 +107,11 @@ public final class PhotoEditorViewController: UIViewController {
         stickersViewController = StickersViewController(nibName: "StickersViewController", bundle: Bundle(for: StickersViewController.self))
         hideControls()
     }
+    
+    @IBAction func sliderChange(_ sender: UISlider) {
+        stroke = Int(sender.value)
+    }
+    
     
     func configureCollectionView() {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()

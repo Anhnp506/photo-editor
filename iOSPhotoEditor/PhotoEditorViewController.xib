@@ -148,12 +148,15 @@
                                 <action selector="cancelButtonTapped:" destination="-1" eventType="touchUpInside" id="jpW-r4-cpQ"/>
                             </connections>
                         </button>
-                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Kae-WQ-obG">
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="6" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Kae-WQ-obG">
                             <rect key="frame" x="125" y="15" width="104" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="100" id="eNs-Wb-HOc"/>
                                 <constraint firstAttribute="height" constant="20" id="hEQ-XO-TiI"/>
                             </constraints>
+                            <connections>
+                                <action selector="sliderChange:" destination="-1" eventType="valueChanged" id="xtD-zq-u8j"/>
+                            </connections>
                         </slider>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
