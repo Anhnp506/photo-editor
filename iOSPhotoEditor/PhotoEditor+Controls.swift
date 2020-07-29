@@ -18,6 +18,7 @@ public enum control {
     case save
     case share
     case clear
+    case slider
 }
 
 extension PhotoEditorViewController {
@@ -131,7 +132,10 @@ extension PhotoEditorViewController {
             case .sticker:
                 stickerButton.isHidden = true
             case .text:
-                textButton.isHidden = true
+                stickerButton.isHidden = true
+            case .slider:
+                strokeSlider.isHidden = true
+                
             }
         }
     }

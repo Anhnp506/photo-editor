@@ -18,6 +18,7 @@ public final class PhotoEditorViewController: UIViewController {
     //To hold the drawings and stickers
     @IBOutlet weak var canvasImageView: UIImageView!
 
+    @IBOutlet weak var strokeSlider: UISlider!
     @IBOutlet weak var topToolbar: UIView!
     @IBOutlet weak var bottomToolbar: UIView!
 
